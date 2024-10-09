@@ -1,0 +1,13 @@
+apiVersion: v2
+name: gh-arc
+description: A Helm chart for github actions runners
+home: https://github.com/Schabo/helm-gh-arc-runners
+type: application
+version: 0.1.0
+deprecated: false
+
+dependencies:
+  - name: gha-runner-scale-set
+    version: 0.9.3
+    repository: oci://ghcr.io/actions/actions-runner-controller-charts
+
