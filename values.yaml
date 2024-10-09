@@ -200,4 +200,4 @@ template:
 ## Note: if your controller is installed to only watch a single namespace, you have to pass these values explicitly.
 # controllerServiceAccount:
   namespace: arc-system
-  name: gh-arc-gha-rs-controlle
+  name: gh-arc-gha-rs-controller
