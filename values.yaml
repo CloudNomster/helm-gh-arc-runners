@@ -164,16 +164,16 @@ gha-runner-scale-set:
           volumeMounts:
             - name: work
               mountPath: /home/runner/_work
-          volumes:
-            - name: work
-              ephemeral:
-                volumeClaimTemplate:
-                  spec:
-                    accessModes: [ "ReadWriteOnce" ]
-                    storageClassName: "vsphere-csi"
-                    resources:
-                      requests:
-                        storage: 1Gi              
+      volumes:
+        - name: work
+          ephemeral:
+            volumeClaimTemplate:
+              spec:
+                accessModes: [ "ReadWriteOnce" ]
+                storageClassName: "vsphere-csi"
+                resources:
+                  requests:
+                    storage: 1Gi              
   ## Optional controller service account that needs to have required Role and RoleBinding
   ## to operate this gha-runner-scale-set installation.
   ## The helm chart will try to find the controller deployment and its service account at installation time.
