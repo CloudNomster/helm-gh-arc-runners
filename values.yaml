@@ -13,7 +13,6 @@ gha-runner-scale-set:
   runnerScaleSetName: "nomsterrunner"
   containerMode:
     type: ""
-  kubernetesModeServiceAccount: arc-runner
   template:
     spec:
       initContainers:
@@ -50,6 +49,7 @@ gha-runner-scale-set:
                 resources:
                   requests:
                     storage: 1Gi
+      serviceAccountName: arc-runner
   controllerServiceAccount:
     namespace: arc-systems
     name: gh-arc-gha-rs-controller
