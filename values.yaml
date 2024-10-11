@@ -53,7 +53,7 @@ gha-runner-scale-set:
 #                resources:
 #                  requests:
 #                    storage: 1Gi
-#      serviceAccountName: arc-runner
+      serviceAccountName: arc-runner
   controllerServiceAccount:
     namespace: arc-systems
     name: gh-arc-gha-rs-controller
