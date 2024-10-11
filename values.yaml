@@ -48,7 +48,7 @@ gha-runner-scale-set:
                 storageClassName: "vsphere-csi"
                 resources:
                   requests:
-                    storage: 1Gi
+                    storage: 5Gi
       serviceAccountName: arc-runner
   controllerServiceAccount:
     namespace: arc-systems
