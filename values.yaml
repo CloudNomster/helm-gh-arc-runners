@@ -10,7 +10,7 @@ gha-runner-scale-set:
   # runnerGroup: "default"
 
   ## name of the runner scale set to create.  Defaults to the helm release name
-  runnerScaleSetName: "NomsterRunner"
+  runnerScaleSetName: "nomsterrunner"
   containerMode:
     type: ""
   kubernetesModeServiceAccount: arc-runner
