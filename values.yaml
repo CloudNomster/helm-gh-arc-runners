@@ -35,7 +35,7 @@ gha-runner-scale-set:
                 fieldRef:
                   fieldPath: metadata.name
             - name: ACTIONS_RUNNER_REQUIRE_JOB_CONTAINER
-              value: "true"
+              value: "false"
           volumeMounts:
             - name: work
               mountPath: /home/runner/_work
