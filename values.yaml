@@ -11,7 +11,7 @@ gha-runner-scale-set:
 
   runnerScaleSetName: "nomsterrunner"
   containerMode:
-    type: "dind"
+    type: ""
   template:
 ## Docker in Docker
     spec:
