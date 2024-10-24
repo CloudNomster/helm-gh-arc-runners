@@ -1,5 +1,6 @@
 gha-runner-scale-set:
-
+  labels:
+    app: gh-arc-runners
   githubConfigUrl: "https://github.com/CloudNomster"
 
   githubConfigSecret: controller-manager

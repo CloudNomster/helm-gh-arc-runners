@@ -7,7 +7,7 @@ metadata:
   annotations:
     github.com/project-slug: CloudNomster/helm-gh-arc-runners
     argocd/app-name: github-arc-runners
-    backstage.io/kubernetes-label-selector: 'app=gh-arc'
+    backstage.io/kubernetes-label-selector: 'app=gh-arc-runners'
   links:
     - url: https://github.com/CloudNomster/helm-gh-arc-runners
       title: Github Actions Runners helm repository
